@@ -58,7 +58,7 @@ const Login = (props) => {
 
 	useEffect(async () => {
 		const res = await axios.get(
-			'http://api.openweathermap.org/data/2.5/weather?zip=27599&appid=7a47ef4085bf456a7e98c7311c379f34&units=imperial'
+			'https://api.openweathermap.org/data/2.5/weather?zip=27599&appid=7a47ef4085bf456a7e98c7311c379f34&units=imperial'
 		);
 
 		setWeather(res.data.main.temp);

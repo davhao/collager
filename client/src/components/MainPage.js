@@ -102,7 +102,7 @@ const MainPage = (props) => {
 			</Button>
 			<BackGif />
 			{!tokens ? (
-				<Button onClick={() => (window.location.href = 'http://localhost:5000/api/login')}>
+				<Button onClick={() => (window.location.href = 'https://collager-426.herokuapp.com/api/login')}>
 					Generate Collage
 				</Button>
 			) : !collageURL ? (
