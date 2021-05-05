@@ -30,7 +30,7 @@ const Login = (props) => {
 
 	const signUp = async () => {
 		try {
-			const res = await axios.post('http://localhost:5000/api/users/signup', {
+			const res = await axios.post('https://collager-426.herokuapp.com//api/users/signup', {
 				username : username,
 				password : password
 			});
@@ -44,7 +44,7 @@ const Login = (props) => {
 
 	const login = async () => {
 		try {
-			const res = await axios.post('http://localhost:5000/api/users/login', {
+			const res = await axios.post('https://collager-426.herokuapp.com/api/users/login', {
 				username : username,
 				password : password
 			});
