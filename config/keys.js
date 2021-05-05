@@ -5,5 +5,5 @@ module.exports = {
 	client_secret : '50da151d6ebc4220b0574a75c994d8d6',
 	redirect_uri  : `https://collager-426.herokuapp.com/api/login/callback`,
 	scopes        : 'user-top-read',
-	url           : 'http://localhost:3000'
+	url           : 'https://collager-426.herokuapp.com'
 };
