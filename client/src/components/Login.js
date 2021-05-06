@@ -31,7 +31,7 @@ const Login = (props) => {
 	const signUp = async () => {
 		try {
 			const res = await axios.post('https://collager-426.herokuapp.com/api/users/signup', {
-				username : username.strip(),
+				username : username.replace(/\s+/g, ''),
 				password : password
 			});
 
@@ -45,7 +45,7 @@ const Login = (props) => {
 	const login = async () => {
 		try {
 			const res = await axios.post('https://collager-426.herokuapp.com/api/users/login', {
-				username : username.strip(),
+				username : username.replace(/\s+/g, ''),
 				password : password
 			});
 
