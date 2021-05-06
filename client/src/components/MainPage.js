@@ -93,6 +93,7 @@ const MainPage = (props) => {
 			<Button
 				onClick={() => {
 					props.setUser(null);
+					sessionStorage.removeItem('user');
 					window.location.href = 'https://collager-426.herokuapp.com';
 				}}
 				style={{
