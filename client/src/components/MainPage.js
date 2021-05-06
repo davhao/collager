@@ -91,7 +91,10 @@ const MainPage = (props) => {
 			}}
 		>
 			<Button
-				onClick={() => props.setUser(null)}
+				onClick={() => {
+					props.setUser(null);
+					window.location.href = 'https://collager-426.herokuapp.com';
+				}}
 				style={{
 					position : 'absolute',
 					top      : '2rem',
