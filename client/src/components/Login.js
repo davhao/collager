@@ -30,8 +30,8 @@ const Login = (props) => {
 
 	const signUp = async () => {
 		try {
-			const res = await axios.post('https://collager-426.herokuapp.com//api/users/signup', {
-				username : username,
+			const res = await axios.post('https://collager-426.herokuapp.com/api/users/signup', {
+				username : username.strip(),
 				password : password
 			});
 
